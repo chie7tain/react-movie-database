@@ -8,13 +8,13 @@ import { Wrapper, Content } from "./MovieInfoBar.styles";
 const MovieInfoBar = ({ time, budget, revenue }) => (
   <Wrapper>
     <Content>
-      <div classname="column">
+      <div className="column">
         <p>Running Time: {calcTime(time)}</p>
       </div>
-      <div classname="column">
+      <div className="column">
         <p>Budget: {convertMoney(budget)}</p>
       </div>
-      <div classname="column">
+      <div className="column">
         <p>Revenue: {convertMoney(revenue)}</p>
       </div>
     </Content>
