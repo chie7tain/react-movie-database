@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import Spinner from "./Spinner";
 import BreadCrumb from "./BreadCrumb";
 import MovieInfo from "./MovieInfo";
+import MovieInfoBar from "./MovieInfoBar";
 //Hooks
 import { useMovieFetch } from "../Hooks/useMovieFetch";
 //image
@@ -21,6 +22,11 @@ const Movie = () => {
     <>
       <BreadCrumb movieTitle={movie.original_title} />
       <MovieInfo movie={movie} />
+      <MovieInfoBar
+        time={movie.runtime}
+        budget={movie.budget}
+        revenue={movie.revenue}
+      />
     </>
   );
 };
